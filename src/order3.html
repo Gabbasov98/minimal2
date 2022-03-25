@@ -1,0 +1,154 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Оформление заказа", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+
+<body>
+
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+
+        <main class="content">
+
+            <section class="registration">
+                <div class="container">
+                    <a class="registration__link code__link" href="">
+                        <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464464C4.34027 0.269202 4.02369 0.269202 3.82843 0.464464L0.646446 3.64644ZM31 3.5L1 3.5L1 4.5L31 4.5L31 3.5Z" fill="#33373A"/>
+                        </svg>
+                        <span>Назад</span>
+                    </a>
+                    <h2 class="registration__title display2">Оформление заказа</h2>
+                    <div class="registration__inner">
+                        <div class="registration__left">
+                            <div class="registration__personal-data">
+                                <h4 class="registration__left-title">Личные даные</h4>
+                                <form class="registration__info-form registration__form-mob">
+                                    <fieldset class="registration__form-group registration__form-group---50 form-group">
+                                        <label for="">Имя</label>
+                                        <input type="text" placeholder="Фвсвсы">
+                                    </fieldset>
+                                    <fieldset class="registration__form-group registration__form-group---50 form-group">
+                                        <label for="">Фамилия</label>
+                                        <input type="text" placeholder="Фвсвсы">
+                                    </fieldset>
+                                    <fieldset class="registration__form-group form-group registration__form-group---100 form-group--error">
+                                        <label for="">Телефон</label>
+                                        <input type="text" placeholder="+7 (___)  ___ - __ -  __">
+                                        <span class="form-group__error-text">Заполните поле</span>
+                                        <button class="registration__code">Отправить код</button>
+                                    </fieldset>
+                                    <fieldset class="registration__form-group form-group registration__form-group---100">
+                                        <label for="">E-mail</label>
+                                        <input type="text" placeholder="Фвсвсы">
+                                    </fieldset>
+                                    <fieldset class="registration__form-group form-group">
+                                        <label for="">Дата рождения</label>
+                                        <input type="date" placeholder="__-__-____">
+                                    </fieldset>
+                                    <fieldset class="registration__form-group form-group">
+                                        <label for="">Пол</label>
+                                        <div class="custom-select">
+                                            <input disabled type="text" placeholder="Пол">
+                                            <div class="custom-select__dropdown">
+                                                <div class="custom-select__dropdown-inner">
+                                                    <div class="custom-select__dropdown-item">Мужской</div>
+                                                    <div class="custom-select__dropdown-item">Женский</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                <a class="registration__left-link" href="">Сохранить изменения</a>
+                            </div>
+                            <div class="registration__address">
+                                <h4 class="registration__left-title">Адрес доставки</h4>
+                                <form class="registration__address-form profile-info__form form">
+                                    <fieldset class="form-group profile-info__form-group---100 form-group--error">
+                                        <label for="">Область/край</label>
+                                        <input type="text" placeholder="Красноярский край">
+                                        <span class="form-group__error-text">Заполните поле</span>
+                                    </fieldset>
+                                    <div class="registration__form-grid">
+                                        <fieldset class="form-group">
+                                            <label for="">Населенный пункт</label>
+                                            <input type="text" placeholder="Ячменёва">
+                                        </fieldset>
+                                        <fieldset class="form-group">
+                                            <label for="">Улица</label>
+                                            <input type="text" placeholder="Yuliamkkjs@gmail.com">
+                                        </fieldset>
+                                    </div>
+                                    <fieldset class="form-group">
+                                        <label for="">Дом</label>
+                                        <input type="text" placeholder="122">
+                                    </fieldset>
+                                    <fieldset class="form-group">
+                                        <label for="">Квартира</label>
+                                        <input type="text" placeholder="122">
+                                    </fieldset>
+                                    <fieldset class="form-group profile-info__form-group---mob">
+                                        <label for="">Индекс</label>
+                                        <input type="text" placeholder="122">
+                                    </fieldset>
+                                </form>
+                                <a class="registration__left-link" href="">Сохранить изменения</a>
+                            </div>
+                            <div class="registration__delivery">
+                                <h4 class="registration__left-title">Способ доставки</h4>
+                                <div class="registration__radio-wrapper radio">
+                                    <input type="radio" id="delivery1" name="delivery" checked>
+                                    <label for="delivery1">Курьером с примеркой<span>/ 0 ₽, от 3 раб. дн.</span></label>
+                                </div>
+                                <div class="registration__radio-wrapper radio">
+                                    <input type="radio" id="delivery2" name="delivery">
+                                    <label for="delivery2">Почта россии<span>/ 120 ₽, от 2 раб. дн.</span></label>
+                                </div>
+                                <div class="registration__radio-wrapper radio">
+                                    <input type="radio" id="delivery3" name="delivery">
+                                    <label for="delivery3">Самовывоз CDEK<span>/ 230 ₽, от 4 раб. дн.</span></label>
+                                </div>
+                            </div>
+                            <div class="registration__payment">
+                                <h4 class="registration__left-title">Условия оплаты</h4>
+                                <div class="registration__radio-wrapper radio">
+                                    <input type="radio" id="payment1" name="payment" checked>
+                                    <label for="payment1">Оплата онлайн</label>
+                                </div>
+                                <div class="registration__radio-wrapper radio">
+                                    <input type="radio" id="payment2" name="payment">
+                                    <label for="payment2">Оплата при получении</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="registration__right cart__right">
+                            <div class="cart__total">
+                                <div class="cart__total-flex">
+                                    <div class="cart__total-left">
+                                        <strong class="cart__total-title">Итого</strong>
+                                        <span class="cart__total-data">Товары (3)</span>
+                                        <span class="cart__total-data">Скидка</span>
+                                        <span class="cart__total-data">Скидка по промокоду</span>
+                                        <span class="cart__total-data">Доставка</span>
+                                    </div>
+                                    <div class="cart__total-right">
+                                        <strong class="cart__total-title">15 171 ₽</strong>
+                                        <span class="cart__total-price">15 400 ₽</span>
+                                        <span class="cart__total-price">- 229 ₽</span>
+                                        <span class="cart__total-price">- 229 ₽</span>
+                                        <span class="cart__total-price">- 229 ₽</span>
+                                    </div>
+                                </div>
+                                <button class="cart__total-btn payment-failed__btn btn-black btn">Оформить заказ</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        @@include('components/page-blocks/_footer.html') @@include('components/page-blocks/_scripts.html')
+
+    </div>
+</body>
+
+</html>

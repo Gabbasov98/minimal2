@@ -1,0 +1,40 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    overflow-x: hidden;
+    color: #22232C;
+    background: #F8F8F8;
+    letter-spacing: 0.003em;
+    padding-top: 103px;
+    &.fixed-body {
+        overflow-y: hidden;
+    }
+    @media screen and (max-width: 992px) {
+        padding: 70px 0 95px;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex-grow: 1;
+    // min-height: 0;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 15px;
+    width: 100%;
+    @media screen and (max-width: 1200px) {
+        max-width: 970px;
+    }
+}
+
+.swiper-pagination {
+    z-index: 2;
+}

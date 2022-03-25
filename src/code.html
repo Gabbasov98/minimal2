@@ -1,0 +1,40 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Профиль ", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+
+<body>
+
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+
+        <main class="content">
+
+            <div class="code">
+                <div class="container">
+                    <a class="code__link" href="">
+                        <svg width="31" height="8" viewBox="0 0 31 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.646446 3.64644C0.451185 3.84171 0.451185 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.73079 4.34027 7.73079 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82842L1.70711 4L4.53553 1.17157C4.7308 0.976308 4.7308 0.659726 4.53553 0.464464C4.34027 0.269202 4.02369 0.269202 3.82843 0.464464L0.646446 3.64644ZM31 3.5L1 3.5L1 4.5L31 4.5L31 3.5Z" fill="#33373A"/>
+                        </svg>
+                        <span>Назад</span>
+                    </a>
+                    <div class="code__inner">
+                        <h2 class="code__title display2">Вход или регистрация</h2>
+                        <p class="code__text">Введите код подтверждения, котрый мы выслали на номер +7(__)-__-__</p>
+                        <form class="code__form">
+                            <fieldset class="code__form-group form-group--error form-group">
+                                <input type="text" placeholder="Код из СМС">
+                                <span class="form-group__error-text code__error-text">Неверный код</span>
+                            </fieldset>
+                        </form>
+                        <a class="code__form-link" href="">Войти через эл.почту</a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+
+        @@include('components/page-blocks/_footer.html') @@include('components/page-blocks/_scripts.html')
+
+    </div>
+</body>
+
+</html>

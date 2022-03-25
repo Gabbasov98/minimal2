@@ -1,0 +1,128 @@
+@import 'var';
+.payment {
+    padding-top: 30px;
+    padding-bottom: 90px;
+    .cart {
+        &__title-desc {
+            margin-bottom: 15px;
+        }
+        &__item-info {
+            display: flex;
+            align-items: center;
+        }
+        &__item-number {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            margin-left: 10px;
+            display: block;
+        }
+        &__delivery {
+            background: #FFFFFF;
+            border-radius: 3px;
+            padding: 40px 47px;
+            margin-top: 30px;
+            &-title {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 120%;
+                padding-bottom: 10px;
+            }
+            &-info {
+                margin-top: 20px;
+            }
+            &-subtitle {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 120%;
+                display: block;
+            }
+            &-desc {
+                font-size: 16px;
+                line-height: 120%;
+                display: block;
+                margin-top: 20px;
+            }
+        }
+    }
+    &__cancel {
+        display: none;
+    }
+}
+
+.payment-failed {
+    &__title {
+        span {
+            color: #BF0404;
+        }
+    }
+    &__link {
+        font-size: 16px;
+        line-height: 120%;
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        &:hover {
+            color: #DA2D70;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .payment-failed {
+        &__link {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .payment {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        .cart {
+            &__item-info {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+            &__item-number {
+                margin-left: 0;
+            }
+            &__title-desc {
+                margin-bottom: 5px;
+            }
+            &__delivery {
+                padding: 30px 20px;
+                margin-top: 20px;
+                &-title {
+                    font-size: 15px;
+                    padding-bottom: 5px;
+                }
+                &-info {
+                    margin-top: 15px;
+                }
+                &-subtitle {
+                    font-size: 13px;
+                }
+                &-desc {
+                    font-size: 13px;
+                    margin-top: 5px;
+                }
+            }
+            &__inner {
+                padding-bottom: 80px;
+            }
+        }
+        &__cancel {
+            color: #BF0404;
+            margin-top: 20px;
+            font-size: 13px;
+            line-height: 120%;
+            display: block;
+            &:hover {
+                color: $accent-color;
+            }
+        }
+    }
+}

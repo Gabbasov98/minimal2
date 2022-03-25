@@ -1,0 +1,69 @@
+.lifestyle {
+    &__items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    &--page {
+        padding: 40px 0 50px;
+        .lifestyle__item {
+            grid-row: unset;
+            img {
+                position: static;
+                transform: unset;
+                min-height: unset;
+                min-width: unset;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .lifestyle {
+        &__items {
+            gap: 20px 15px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .lifestyle {
+        &__items {
+            margin-top: 20px;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .lifestyle {
+        &--page {
+            .lifestyle {
+                &__inner {
+                    padding-bottom: 0;
+                }
+                &__content {
+                    &-title {
+                        font-size: 14px;
+                        line-height: 175%;
+                    }
+                    &-desc {
+                        font-size: 11px;
+                        line-height: 120%;
+                        margin-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .lifestyle {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -1,0 +1,316 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"en", "title":"Профиль ", "description":"", "keywords":"", "favicon":"img/favicons/favicon", })
+
+
+<body>
+
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+
+        <main class="content">
+
+            <div class="breadcrumbs">
+                <div class="container">
+                    <a href="index.html" class="breadcrumbs__item">Главная</a>
+                    <span class="breadcrumbs__item">Каталог</span>
+                </div>
+            </div>
+
+            <section class="catalog">
+                <div class="container">
+                    <h2 class="catalog__title display2">Каталог</h2>
+                    <div class="catalog__items">
+                        <div class="catalog__item">
+                            <img src="img/catalog.jpg" alt="">
+                            <p class="catalog__item-text">ВЕРХНЯЯ ОДЕЖДА</p>
+                        </div>
+                        <div class="catalog__item">
+                            <img src="img/catalog.jpg" alt="">
+                            <p class="catalog__item-text">ВЕРХНЯЯ ОДЕЖДА</p>
+                        </div>
+                        <div class="catalog__item">
+                            <img src="img/catalog.jpg" alt="">
+                            <p class="catalog__item-text">ВЕРХНЯЯ ОДЕЖДА</p>
+                        </div>
+                        <div class="catalog__item">
+                            <img src="img/catalog.jpg" alt="">
+                            <p class="catalog__item-text">ВЕРХНЯЯ ОДЕЖДА</p>
+                        </div>
+                    </div>
+                    <div class="catalog__inner">
+                        <div class="catalog__left">
+                            <div class="catalog-sidebar">
+                                <div class="catalog-sidebar__title">Категории</div>
+                                <a href="" class="catalog-sidebar__link">Верхняя одежда</a>
+                                <a href="" class="catalog-sidebar__link">Свитера и джемперы</a>
+                                <a href="" class="catalog-sidebar__link">Костюмы</a>
+                                <a href="" class="catalog-sidebar__link">Обувь</a>
+                                <a href="" class="catalog-sidebar__link">Брюки и джинсы</a>
+                                <a href="" class="catalog-sidebar__link">Аксессуары</a>
+
+                                <div class="catalog-sidebar__range">
+                                    <div class="catalog-sidebar__title">Цена</div>
+                                    <div class="range-slider" id="range"></div>
+                                    <div class="range-slider__inputs form-group">
+                                        <div class="range-slider__input" data-input="от">
+                                            <input class="" id="range-input1" type="number">
+                                        </div>
+                                        <div class="range-slider__input" data-input="до">
+                                            <input class="" id="range-input2" type="number">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="catalog-sidebar__size">
+                                    <div class="catalog-sidebar__title">Размер</div>
+                                    <div class="catalog-sidebar__check check">
+                                        <input type='checkbox' class='checkbox' id='size1' />
+                                        <label for='size1'>XS</label>
+                                    </div>
+                                    <div class="catalog-sidebar__check check">
+                                        <input type='checkbox' class='checkbox' id='size2' />
+                                        <label for='size2'>S</label>
+                                    </div>
+                                    <div class="catalog-sidebar__check check">
+                                        <input type='checkbox' class='checkbox' id='size3' />
+                                        <label for='size3'>M</label>
+                                    </div>
+                                    <div class="catalog-sidebar__check check">
+                                        <input type='checkbox' class='checkbox' id='size4' />
+                                        <label for='size4'>L</label>
+                                    </div>
+                                    <div class="catalog-sidebar__check check">
+                                        <input type='checkbox' class='checkbox' id='size5' />
+                                        <label for='size5'>oversize</label>
+                                    </div>
+                                </div>
+
+                                <div class="catalog-sidebar__buttons">
+                                    <button class="catalog-sidebar__btn btn btn-black">Применить</button>
+                                    <button class="catalog-sidebar__btn btn btn-link">Сбросить</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="catalog__right">
+                            <div class="catalog__top">
+                                <div class="catalog__select">
+                                    <div class="custom-select">
+                                        <input disabled type="text" value="По популяртности">
+                                        <div class="custom-select__dropdown">
+                                            <div class="custom-select__dropdown-inner">
+                                                <div class="custom-select__dropdown-item custom-select__dropdown-item--selected">По популяртности</div>
+                                                <div class="custom-select__dropdown-item">Сначала новинки</div>
+                                                <div class="custom-select__dropdown-item">По цена: по убыванию</div>
+                                                <div class="custom-select__dropdown-item">По цена: по возрастанию</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="catalog__filter-btn">
+                                    <svg width="26" height="21" viewBox="0 0 26 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.17762 2.84195C5.5745 3.02323 5.00272 3.59729 4.81082 4.21451L4.74815 4.41305L3.88265 4.426C3.04847 4.43895 3.0093 4.44327 2.8879 4.53822C2.6255 4.7454 2.6255 5.21155 2.8879 5.41873C3.0093 5.51369 3.04847 5.51801 3.88265 5.53095L4.74815 5.5439L4.81082 5.74245C4.89697 6.023 5.07713 6.31651 5.31602 6.56253C5.95047 7.22723 6.81206 7.36535 7.61099 6.93804C8.00654 6.72655 8.48433 6.10501 8.59399 5.66907L8.61749 5.56117L15.5102 5.53959L22.3991 5.51801L22.5244 5.41873C22.7868 5.21155 22.7868 4.7454 22.5244 4.53822L22.3991 4.43895L15.5102 4.41737L8.61749 4.39579L8.59399 4.28788C8.48433 3.85194 8.00654 3.23041 7.61099 3.01891C7.16061 2.77721 6.62016 2.71246 6.17762 2.84195ZM7.0862 3.96417C7.26244 4.04186 7.44651 4.23177 7.56791 4.45622C7.65799 4.62455 7.67365 4.70224 7.67365 4.97848C7.67365 5.25472 7.65799 5.33241 7.56791 5.50074C7.44259 5.73382 7.26244 5.9151 7.06662 6.00574C6.89039 6.08775 6.49875 6.08775 6.3186 6.00142C5.9583 5.83741 5.69591 5.4101 5.69591 4.97848C5.69591 4.60297 5.84864 4.30515 6.17762 4.02891C6.36952 3.86921 6.80814 3.839 7.0862 3.96417Z" fill="#33373A"/>
+                                        <path d="M18.2517 8.34942C17.6407 8.50912 16.971 9.18677 16.8222 9.80831L16.7948 9.92053L9.90205 9.94211L3.01322 9.96369L2.8879 10.063C2.6255 10.2701 2.6255 10.7363 2.8879 10.9435L3.01322 11.0427L9.90205 11.0643L16.7948 11.0859L16.8183 11.1938C16.9279 11.6297 17.4057 12.2513 17.8013 12.4628C18.4083 12.7865 19.0663 12.7865 19.6459 12.4628C20.0336 12.247 20.4644 11.7074 20.6015 11.2672L20.6641 11.0686L21.5296 11.0557C22.3638 11.0427 22.403 11.0384 22.5244 10.9435C22.7868 10.7363 22.7868 10.2701 22.5244 10.063C22.403 9.968 22.3638 9.96369 21.5296 9.95074L20.6641 9.93779L20.6015 9.73925C20.4056 9.11339 19.8339 8.54365 19.219 8.36669C18.9762 8.29763 18.4906 8.289 18.2517 8.34942ZM19.1133 9.4889C19.3052 9.57523 19.5245 9.81694 19.6224 10.05C19.8574 10.6025 19.6106 11.2888 19.0937 11.5262C18.9135 11.6125 18.5219 11.6125 18.3457 11.5305C18.0167 11.3794 17.766 11.0082 17.7308 10.6241C17.6525 9.78672 18.4044 9.1695 19.1133 9.4889Z" fill="#33373A"/>
+                                        <path d="M12.2088 13.8915C11.6448 14.0598 11.1631 14.4915 10.9242 15.0396C10.8498 15.2166 10.7871 15.3806 10.7871 15.4108C10.7871 15.454 9.99995 15.4669 6.90214 15.4756L3.01322 15.4885L2.8879 15.5878C2.6255 15.795 2.6255 16.2611 2.8879 16.4683L3.01322 16.5676L6.90214 16.5805C9.99995 16.5892 10.7871 16.6021 10.7871 16.6453C10.7871 16.6755 10.8498 16.8395 10.9242 17.0165C11.5038 18.3502 13.1761 18.6437 14.1278 17.5689C14.3393 17.3359 14.6251 16.8006 14.6251 16.6453C14.6251 16.6021 15.4123 16.5892 18.5141 16.5805L22.3991 16.5676L22.5244 16.4683C22.7868 16.2611 22.7868 15.795 22.5244 15.5878L22.3991 15.4885L18.5141 15.4756C15.4123 15.4669 14.6251 15.454 14.6251 15.4108C14.6251 15.3806 14.5625 15.2123 14.4881 15.0396C14.0925 14.1332 13.0939 13.6325 12.2088 13.8915ZM13.1761 15.0698C13.8771 15.454 13.8732 16.5978 13.1644 16.9949C12.5652 17.3315 11.872 16.969 11.731 16.2439C11.6213 15.6784 11.9385 15.1216 12.4633 14.9663C12.6983 14.8929 12.9059 14.9231 13.1761 15.0698Z" fill="#33373A"/>
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="favourite__items">
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <span class="product-card__hit">
+                                            <svg width="68" height="24" viewBox="0 0 68 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0 0.223145H68L64.0868 11.5309L68 23.2231H0L3.94203 11.6568L0 0.223145Z" fill="#DA2D70"></path>
+                                                <path d="M23.0984 7.95664L25.6854 11.5576L28.2594 7.95664H29.3904L26.2834 12.3246L29.6374 17.0566H28.5064L25.6854 13.1436L22.8644 17.0566H21.7594L25.1004 12.3636L21.9934 7.95664H23.0984ZM30.9241 7.95664H31.8731V15.4966L37.6971 7.95664H38.5681V17.0566H37.6191V9.52964L31.7951 17.0566H30.9241V7.95664ZM47.372 8.78864H44.174V17.0566H43.225V8.78864H40.027V7.95664H47.372V8.78864Z" fill="white"></path>
+                                            </svg>
+                                        </span>
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="favourite__item">
+                                    <div class="product-card">
+                                        <div class="product-card__top">
+                                            <button class="product-card__favourite"></button>
+                                            <a href="" class="product-card__img">
+                                                <img src="img/product.webp" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="product-card__prices">
+                                            <span class="product-card__price-new">3000 ₽</span>
+                                            <span class="product-card__price-old">3000 ₽</span>
+                                        </div>
+                                        <a href="" class="product-card__title">Свитер оверсайз </a>
+                                        <div class="product-card__colors">
+                                            <span class="product-card__color" style="background: #FFFFFF;"></span>
+                                            <span class="product-card__color" style="background: #C2FFD7;"></span>
+                                            <span class="product-card__color" style="background: #FFC3C3;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        @@include('components/page-blocks/_footer.html') @@include('components/page-blocks/_scripts.html')
+    </div>
+</body>
+
+</html>
