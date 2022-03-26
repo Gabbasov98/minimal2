@@ -60,6 +60,25 @@ $(document).ready(function() {
             }
         }
     });
+
+
+    $(".open-modal").click(function() {
+        $(".modal").addClass("modal--active")
+        $("body").append(`<div class="modal__bg"></div>`)
+        $("body").addClass("fixed-body")
+
+        $(".modal__bg").click(function() {
+            $(".modal").removeClass("modal--active")
+            $("body").removeClass("fixed-body")
+            $(".modal__bg").remove()
+        })
+
+        $(".modal__close").click(function() {
+            $(".modal").removeClass("modal--active")
+            $("body").removeClass("fixed-body")
+            $(".modal__bg").remove()
+        })
+    })
 });
 
 

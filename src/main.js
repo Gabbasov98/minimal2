@@ -22,9 +22,7 @@ function gallery() {
     });
 }
 
-
 $(document).ready(function() {
-
     gallery()
 
     function cartCalc() {
@@ -85,5 +83,7 @@ $(document).ready(function() {
             }
         }
     })
+
+
 
 })
