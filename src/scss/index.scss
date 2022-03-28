@@ -38,7 +38,7 @@
         border-radius: 3px;
         position: absolute;
         left: 15px;
-        top: 280px;
+        top: 290px;
         z-index: 2;
     }
     .swiper-pagination {
@@ -46,6 +46,7 @@
     }
     .swiper-container {
         overflow: hidden;
+        padding-top: 25px;
     }
 }
 
@@ -312,7 +313,7 @@
             transform: translate(15px, -15px);
         }
         &__btn {
-            top: 240px;
+            top: 260px;
         }
     }
     .advantages {
@@ -337,14 +338,9 @@
 @media screen and (max-width: 992px) {
     .main {
         padding: 40px 0;
-        &__left {
-            width: 300px;
+        .swiper-container {
+            padding-top: 0;
         }
-        &__right {
-            width: calc(100% - 330px);
-        }
-    }
-    .main {
         &__inner {
             display: block;
             // padding-bottom: 65px;
@@ -491,9 +487,8 @@
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 345px;
             height: 45px;
-            max-width: 100%;
+            width: 100%;
             border: 1px solid #33373A;
             text-decoration: none;
             border-radius: 3px;

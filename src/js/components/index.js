@@ -2,7 +2,7 @@ function mainSlider() {
     var swiper = new Swiper('.main .swiper-container', {
         slidesPerView: 1,
         spaceBetween: 10,
-        autoplay: true,
+        // autoplay: true,
         pagination: {
             el: '.main .swiper-pagination',
             type: 'bullets',

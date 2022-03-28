@@ -64,6 +64,7 @@ input {
 .btn-black {
     background: #33373A;
     color: #FFFFFF;
+    border-radius: 3px;
     &:hover {
         background: #22232C;
         color: #FFFFFF;
@@ -110,9 +111,10 @@ input {
         top: 19px;
         right: 19px;
         width: 26px;
-        height: 23px;
+        height: 26px;
         background-image: url(../img/favourite.svg);
         background-size: 100% auto;
+        background-repeat: no-repeat;
         &--active {
             background-image: url(../img/favourite2.svg);
         }
@@ -191,29 +193,35 @@ input {
         height: 17px;
         border: none;
         padding: 0 40px 0 16px;
-        font-size: 14px;
+        font-size: 16px;
         background-color: transparent;
     }
     &--active {
+        // background: #FFFFFF;
+        // border-radius: 3px;
         input {
             background-image: url(../img/arrow2.svg);
+            position: relative;
+            z-index: 6;
         }
         .custom-select__dropdown {
             display: block;
         }
     }
     &__dropdown {
+        border-radius: 3px;
         background: #FFFFFF;
         box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.1);
         border-radius: 6px;
-        padding: 8px 0;
         margin-top: 5px;
-        width: 100%;
+        width: calc(100% + 30px);
         position: absolute;
-        top: 100%;
+        top: -15px;
+        left: -15px;
         display: none;
         z-index: 5;
         transform: translateY(-2px);
+        padding: 35px 15px 15px;
         &-inner {
             max-height: 156px;
             overflow-y: auto;
@@ -221,20 +229,19 @@ input {
             flex-direction: column;
         }
         &-item {
-            padding: 8px 16px;
-            font-size: 11px;
+            padding: 9px 0;
+            font-size: 14px;
             line-height: 120%;
             letter-spacing: 0.003em;
             color: #22232C;
             transition: all .3s;
+            border-bottom: 0.3px solid rgba(#22232C, 0.7);
             &:hover {
                 cursor: pointer;
-                background-color: #000;
-                color: #fff;
+                color: $accent-color;
             }
             &--selected {
-                background-color: #000;
-                color: #fff;
+                display: none;
             }
         }
     }
@@ -291,6 +298,7 @@ input {
         opacity: 1;
     }
     label {
+        display: block;
         cursor: pointer;
         font-size: 16px;
         line-height: 120%;
@@ -349,13 +357,13 @@ input {
 }
 
 .noUi-horizontal .noUi-handle {
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
     background: #33373A;
     border: none;
     box-shadow: none;
-    top: -9px;
+    top: -7px;
     &::before,
     &::after {
         display: none;
@@ -370,6 +378,7 @@ input {
 
 .noUi-connect {
     background: #33373A;
+    margin-left: 3px;
 }
 
 .check {
@@ -444,6 +453,18 @@ input {
         padding: 20px 25px;
         &__prices {
             margin-top: 5px;
+        }
+        &__favourite {
+            top: 10px;
+            right: 10px;
+            width: 20px;
+        }
+        &__hit {
+            top: -7px;
+            svg {
+                width: 46px;
+                height: auto;
+            }
         }
         &__price {
             &-new {

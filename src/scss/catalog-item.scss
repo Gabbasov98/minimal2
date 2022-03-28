@@ -404,13 +404,14 @@
                 display: none;
             }
             &-btn {
-                position: absolute;
-                bottom: 0;
+                position: fixed;
+                bottom: 100px;
                 left: 50%;
                 transform: translate(-50%, 0%);
                 width: 100%;
                 padding-right: 15px;
                 padding-left: 15px;
+                z-index: 3;
             }
         }
         &__btn {
